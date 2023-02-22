@@ -1,7 +1,7 @@
 # **Currency converter by React**
 
 ## **Demo**: 
-[Please click here to use currency converter](https://katarzynazaloba.github.io/todo-list-react/)
+[Please click here to use currency converter](https://katarzynazaloba.github.io/react-calculator/)
 
 ## **How it works**
 ![Calculator GIF](./public/gif.gif)
