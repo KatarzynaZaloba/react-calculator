@@ -1,7 +1,8 @@
 import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
-import Result from "../Result";
+import { Clock } from "../Clock"
+import Result from "../Result/index";
 
 
 const Form = () => {
@@ -13,6 +14,9 @@ const Form = () => {
     return (
         
         <form className="form">
+            <div className="app">
+                <Clock />
+            </div>
             <h1 class="form__header">Kalkulator walutowy</h1>
             <fieldset className="form__fieldset">
                 
