@@ -28,6 +28,8 @@ To create the application I have used:
 - Markdown
 - Immutability
 - React
+- Styled-Components
+- Custom-Hooks
 
 ## **About me** ## 
 
