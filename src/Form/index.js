@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledForm, StyledDiv, StyledHeader, StyledFieldset, StyledSpan, StyledInput, StyledSelect } from "./styled";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Clock } from "../Clock"
@@ -13,18 +13,15 @@ const Form = () => {
 
     return (
         
-        <form className="form">
-            <div className="app">
+        <StyledForm>
+            <StyledDiv>
                 <Clock />
-            </div>
-            <h1 class="form__header">Kalkulator walutowy</h1>
-            <fieldset className="form__fieldset">
-                
+            
+            <StyledHeader>Kalkulator walutowy</StyledHeader>
+            <StyledFieldset>
                 <p>
-                    <label className="form__label">
-                        <span className="form__labelText">Wpisz kwotę w PLN:</span>
-                        <input
-                            className="form__field"
+                        <StyledSpan>Wpisz kwotę w PLN:</StyledSpan>
+                        <StyledInput
                             type="number"
                             step="0.01"
                             required min="0"
@@ -32,13 +29,11 @@ const Form = () => {
                             value={amount}
                             onChange={({target }) => setAmount(target.value)}
                         />
-                    </label>
                 </p>
                 <p>
-                    <label className="form__label">
-                        <span className="form__labelText">Wybierz walutę</span>
-                        <select
-                            className="form__field"
+                    <label>
+                        <StyledSpan>Wybierz walutę</StyledSpan>
+                        <StyledSelect
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                         >
@@ -50,7 +45,7 @@ const Form = () => {
                                     {currency.name}
                                 </option>
                             ))} 
-                        </select>
+                        </StyledSelect>
                     </label>
                 </p>
                 
@@ -59,8 +54,9 @@ const Form = () => {
                 currency={currency}
                 rate={rate}
                 />              
-            </fieldset>
-        </form>
+            </StyledFieldset>
+            </StyledDiv>
+        </StyledForm>
     );
 };
 
