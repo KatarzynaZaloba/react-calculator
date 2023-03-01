@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
-text-align: right;
-    font-family: monospace;
+    text-align: right;
     color: #777;
 `;
