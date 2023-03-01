@@ -68,6 +68,7 @@ export const StyledButton = styled.button`
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
+    font-size: 22px;
 
     &:hover {
         filter: brightness(110%);
