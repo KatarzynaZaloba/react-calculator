@@ -5,7 +5,7 @@ export const Result = ({ result }) => (
         <StyledParagraph> 
             {!!result && (
             <>
-                {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
+                {result.sourceAmount.toFixed(0)}&nbsp;PLN&nbsp;=
                 {" "}
                 <strong>
                     {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
